@@ -4,7 +4,7 @@ sudo apt-get install software-properties-common -y
 sudo apt-add-repository ppa:ansible/ansible
 sudo apt-get update
 sudo apt-get install ansible -y
-sudo apt-get install openssh-server -y
-git clone https://github.com/adreipak/wordpress-ansible.git
+sudo apt-get install ssh -y
+git clone https://github.com/andreipak/wordpress-ansible.git
 cd wordpress-ansible 
-sudo ansible-playbook playbook.yml -i hosts -e mysql_root_password=asd
+sudo ansible-playbook playbook.yml -i hosts -e mysql_root_password=123456
